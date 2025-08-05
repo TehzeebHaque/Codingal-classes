@@ -1,3 +1,63 @@
-.heading{
-    font-size: 50px;
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.external{
+  color: #781593;
+  font-size: 30px;
+}
+
+.background{
+  background-color: #784992;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  margin: auto
+  
+}
+
+.Typography{
+  font-family: 'Voluta script pro regular', Times, serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-variant: small-caps;
+  
+}
+
+.Transhform{
+  transform: rotate(180deg);
+  font-size: 40px;
+}
+
+.text-decoration{
+  text-decoration: underline;
+  font-size: 35px;
+}
+
+.text-transform{
+  text-transform: lowercase;
+  font-size: 35px;
+}
+
+.textindent{
+  text-indent: 50%;
+  font-size: 35px;
+}
+
+.textshadow{
+  text-shadow: 5px 5px 5px turquoise;
+  font-size: 35px;
+}
+
+.boxshadow{
+  box-shadow: 50px 50px 50px grey;
+  font-size: 55px;
+  border-radius: 40px;
+  width: 400px;
+  text-align: center;
 }
