@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> JS-class-1 </title>
+        <title> JS-class </title>
     </head>
     <body>
          <h1 id="myheading"> JS-activities-syntax, comment, statement, variable, operator</h1>
         <p id="mypara"> Today leran intro of JS</p>
+
         <script>
             //my heading
             document.getElementById(myheading).innerHTML= "Javascript commenting"
+
+             function myfunction(x,y){
+                if (y == undefined){
+                    y = 2;
+                }
+                document.write(x * y);
+            }
+
+            var b = 5;
+            function myfunction(){
+            var a = 4;
+            document.getElementById("demo").innerHTML = b * a;
+            }
+            document.getElementById("demo1").innerHTML = a;
+            document.getElementById("demo1").innerHTML = b;
         </script>
+
+        <button onclick="myfunction(5)"> Execute JS function </button>
+        
+       <button type="button" oneclick="myfunction()"> Click Me </button>
+
+       <p id="demo"></p>
+       <p id="demo"></p>
+
     </body>
 </html>
