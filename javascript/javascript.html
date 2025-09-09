@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JS-class </title>
+        
+    </head>
+    <body>
+        <h1> Activity-1 </h1>
+        <h1 id="demo"> Activity-2 </h1>
+        <script>
+            var str = "Amazing";
+             document.Write(str.ToUpperCase())
+            document.Write("<br>") 
+             document.Write(str.ToLowerCase())
+            document.Write("<br>")
+             document.Write(str.startswith())
+            document.Write("<br>")
+
+            var str1 = "i learnt about method";
+            var patt = new RegExp ("method");
+            var res = patt.test(str);
+            document.Write("res");
+
+            var fruits = ["apple", "mango", "dragon fruit"];
+            var text = "";
+            var i;
+            for (i=0; i<fruits.length; i++){
+                text += fruits[i]
+            }
+            document.getElementById("demo").innerHTML
+        </script>
+    </body>
