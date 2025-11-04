@@ -192,7 +192,9 @@
           }
 
           else if (id==="backspace") {
-            currentInput = currentInput;
+            currentInput = currentInput.slice("0, -1");
+            displayvalue = displayvalue.slice("0, -1");
+            result.value = result.value;
           }
         })
       }
