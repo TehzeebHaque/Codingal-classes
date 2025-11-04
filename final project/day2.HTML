@@ -162,6 +162,42 @@
    </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js">
+
+    const result = document.getElementById("result");
+    const buuton = document.querySelectorAll("*keyboard button");
+
+    let displayvalue = "";
+    let currentinput = "";
+    let operator = "";
+    let previousinput= "";
+
+      buttons.forEach( button => {
+        button.addEventListener("click", () =>{
+          const id = button.id; 
+          const text = button.textcontent;
+
+          if(button.classList.contains("number")) {
+            currentinput +="";
+            displayValue +="";
+            result.value = displayValue;
+          }
+
+          else if (id---"clear") {
+            currentInput= text;
+            previousinput= "";
+            operator="";
+            displayvalue="";
+            result.value="";
+          }
+
+          else if (id==="backspace") {
+            currentInput = currentInput;
+          }
+        })
+      }
+        
+      );
+  </script>
     </body>
 </html>
