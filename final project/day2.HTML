@@ -152,6 +152,11 @@
       <button class="number" id="4">4</button>
       <button class="number" id="5">5</button>
       <button class="number" id="6">6</button>
+      <button class="operator" id="subtract">-</button>
+
+      <button class="number" id="1">1</button>
+      <button class="number" id="2">2</button>
+      <button class="number" id="3">3</button>
       <button class="operator" id="add">+</button>
 
       <button class="empty" id="empty1"></button>
@@ -196,10 +201,47 @@
             displayvalue = displayvalue.slice("0, -1");
             result.value = result.value;
           }
-        })
-      }
+          else if (id === "equals") {
+            if (previousInput && currentInput && operator) {
+              const output = calculate(previousInput, currentInput, operator);
+              displayvalue += " = " + output;
+              result.value = displayvalue;
+              
+              currentInput = output;
+              previousinput = "";
+              operator = "";
+              displayvalue = output.toString();
+            }
+          }
+
+          else {
+            if (currentinput === "")return;
+            if (previousinput !== ""){
+              const output = calculate(previousinput, currentinput, operator);
+              previousinput = output;
+            } else {
+              previousinput = currentinput;
+            }
+            operator = id;
+            displayvalue + " " + text + " ";
+            result.value = displayvalue;
+            currentinput - "";
+          }
+        });
+      });
         
-      );
+      function calculate (a, b, op) {
+        a = parseFloat (a);
+        b = parseFloat (b);
+        switch (op) {
+          case "add" : return a + b;
+          case "subtract" : return a - b;
+          case "multiply" : return a * b;
+          case "divide" : return b !== 0 ? a / b : "Error";
+          case "modulus" : return a % b;
+          default : return b;
+        }
+      }
   </script>
     </body>
 </html>
