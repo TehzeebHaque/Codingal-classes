@@ -1,0 +1,79 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 2px goldenrod;
+    padding: 20px;
+}
+
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+    font-style: italic;
+    font-size:20px
+}
+
+.logo {
+    font-weight: bolder;
+    color:goldenrod;
+    font-size:20px
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.reservation {
+    background-color: goldenrod;
+    color: white;
+    border-radius:5px;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+}
+
+.img {
+    z-index: 1;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 10px;
+    width: 1430px;
+    height: 1000px;
+}
+
+.texts{
+    padding-top: 240px;
+    font-weight: bolder;
+    font-size: 70px;
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    left: 18%;
+    font-style: italic;
+}
+
+.headline{
+    z-index: 10;
+}
