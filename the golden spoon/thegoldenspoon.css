@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .navigation {
     display: flex;
     flex-direction: row;
@@ -29,6 +33,58 @@
     font-weight: bolder;
     color:goldenrod;
     font-size:20px
+}
+
+/* Card and hero styles added to support the updated markup */
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    padding: 1.25rem;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    overflow: hidden;
+    width: 320px;
+}
+
+.food-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.description {
+    padding: 1rem;
+}
+
+.food-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.food-desc {
+    margin: 0 0 0.75rem 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.price {
+    color: #c84;
+    font-weight: 700;
+}
+
+/* Hero image styling (replaces invalid <image> element with <img>) */
+.hero .img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
 }
 
 .btn {
@@ -74,6 +130,143 @@
     font-style: italic;
 }
 
+.texts-2{
+    padding-top: 320px;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    left: 27%;
+    font-style: italic;
+}
+
+.reserve{
+    position: absolute;
+    top: 350px;
+    left: 30%;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 .headline{
     z-index: 10;
 }
+
+.about-us-2 {
+    font-weight: bold;
+    color: goldenrod;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 700px;
+    font-style: italic;
+}
+
+.about-us {
+    font-weight: bolder;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 540px;
+    font-style: italic;
+    margin-top: 170px;
+}
+
+.about-us-3 {
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 400px;
+    padding-right: 400px;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.todayspecials {
+    padding-top: 70px;
+    padding-left: 640px;
+    padding-right: 600px;
+    font-size: 30px;
+    color: goldenrod;
+    font-style: italic;
+}
+
+.footer-last {
+    background-color: saddlebrown;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact {
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+}
+
+.address {
+    font-size: small;
+    font-style: italic;
+    color: white;
+}
+
+.something-ig {
+    font-size: small;
+    font-style: italic;
+    color: white;
+}
+
+.email-ig {
+    font-size: small;
+    font-style: italic;
+    color: white;
+}
+
+.timings {
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+.working-days {
+    font-style: italic;
+    color: white;
+}
+
+.weekend-days {
+    font-style: italic;
+    color: white;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.icons a {
+    text-decoration: none;
+    background-color: none;
+}
+/* End of stylesheet - duplicate/conflicting blocks removed to keep styles deterministic */
