@@ -13,40 +13,40 @@ import turtle
 #     polygon.right(angle)
 # turtle.done()
 
-#Activity-2
-turtle.Screen().bgcolor("yellow")
-board = turtle.Turtle()
-board.forward(100)
+# #Activity-2
+# turtle.Screen().bgcolor("yellow")
+# board = turtle.Turtle()
+# board.forward(100)
 
-board.left(120)
-board.forward(100)
-board.left(120)
-board.forward(100)
+# board.left(120)
+# board.forward(100)
+# board.left(120)
+# board.forward(100)
 
-board.penup()
-board.right(150)
-board.forward(50)
+# board.penup()
+# board.right(150)
+# board.forward(50)
 
-board.pendown()
-board.right(90)
-board.forward(100)
+# board.pendown()
+# board.right(90)
+# board.forward(100)
 
-board.right(120)
-board.forward(100)
-board.right(120)
-board.forward(100)
+# board.right(120)
+# board.forward(100)
+# board.right(120)
+# board.forward(100)
 
-turtle.done()
+# turtle.done()
 
-#Activity-3
-my_wn = turtle.Screen()
-my_wn.bgcolor("lightblue")
-my_wn.title("Hello, Tess!")
-my_pen = turtle.Turtle()
-size=0
-while True: 
-    for i in range(4):
-      my_pen.fd(size + 1)
-      my_pen.left(90)
-      size = size-5
-    size = size+1
+# #Activity-3
+# my_wn = turtle.Screen()
+# my_wn.bgcolor("lightblue")
+# my_wn.title("Hello, Tess!")
+# my_pen = turtle.Turtle()
+# size=0
+# while True: 
+#     for i in range(4):
+#       my_pen.fd(size + 1)
+#       my_pen.left(90)
+#       size = size-5
+#     size = size+1
